@@ -44,7 +44,7 @@ def main():
         for ast in asteroids:
             for s in shots:
                 if ast.colides_with(s):
-                    ast.kill()
+                    ast.split()
                     s.kill()
                     log_event("asteroid_shot")
         for i in drawable:
